@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aryan's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            /* Unique Background */
+            background: linear-gradient(135deg, #a8dadc, #457b9d); /* Example gradient */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff; /* Light text for dark background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding-bottom: 60px; /* Adjust for fixed footer */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes full viewport height */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent header */
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        #about {
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white for content blocks */
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        #skills {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        #projects {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .project {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .clickable-section {
+            background-color: #00a8e8; /* Vibrant clickable color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            margin: 20px auto; /* Center the clickable section */
+            border-radius: 8px;
+            text-decoration: none;
+            display: block;
+            max-width: 300px; /* Limit width */
+        }
+
+        .clickable-section:hover {
+            background-color: #0077b6;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .profile-photo-container {
+            width: 150px; /* Adjust size as needed */
+            height: 150px;
+            border-radius: 50%; /* Make it circular */
+            overflow: hidden; /* Hide any part of the image that goes outside the circle */
+            margin: 20px auto; /* Center above the header */
+            border: 5px solid #fff; /* Optional border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the entire container */
+        }
+
+        #contact p a {
+            color: #00a8e8; /* Link color in contact section */
+            text-decoration: none;
+        }
+
+        #contact p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-photo-container">
+        <img src="https://i.ibb.co/PvgrKRLy/IMG-4894.webp" alt="Aryan's Profile Photo">
+    </div>
+    <header>
+        <div class="container">
+            <h1>Aryan Rakesh Pardeshi</h1>
+            <p>Web Developer | Designer | Problem Solver</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Aryan, a first-year Engineering student specializing in Electronics and Telecommunication (ENTC) at MITAOE. I have a strong passion for technology and innovation, and I’m excited about the endless possibilities that the fields of electronics and communication systems offer. My academic journey is fueled by my curiosity to understand how things work, whether it's experimenting with circuits, coding, or learning about communication networks. I’m eager to expand my skill set through personal projects and hands-on experience, especially at the intersection of hardware and software.</p>
+            <p>Outside of my studies, I enjoy exploring new technologies, participating in tech communities, and taking on challenges that allow me to grow both personally and professionally. My goal is to contribute to impactful technological solutions that can solve real-world problems, and I’m always open to collaborating on interesting projects.</p>
+            <p>Feel free to <a href="#contact" style="color: #00a8e8; text-decoration: none;">contact me</a> if you have any questions or collaboration ideas!</p>
+        </div>
+    </section>
+
+    <a href="#projects" class="clickable-section">
+        View My Projects
+    </a>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>UI/UX Design</li>
+                <li>Arduino Programming</li>
+                <li>Electronics Prototyping</li>
+                </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Traffic light controller</h3>
+                <p>Traffic Light Controller Project
+                    Project Overview:
+                    The Traffic Light Controller project is designed to automate the operation of traffic lights at an intersection. This system controls the switching of traffic signals (red, yellow, and green) in a timed sequence, ensuring smooth traffic flow. It also incorporates features like pedestrian crossings and real-time adaptive control (optional), based on sensors detecting vehicle presence. The project is based on a microcontroller (like Arduino or Raspberry Pi) that sequentially controls the traffic lights and incorporates safety features.
+                </p>
+                <p><strong>Technologies Used:</strong> Arduino, LEDs, Resistors</p>
+                <a href="https://i.ibb.co/yF5ZxsYD/IMG20250104141607.webp" target="_blank">View Image</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: Alcohol detector using Arduino</h3>
+                <p>Alcohol Detector Using Arduino - Project Description
+                    Project Overview:
+                    The Alcohol Detector using Arduino is a system that detects the presence of alcohol vapor in the air. This project uses an alcohol sensor (often referred to as an MQ-3 sensor) connected to an Arduino board to measure the concentration of alcohol. The system then activates a visual or audible alert (such as an LED or buzzer) when alcohol levels exceed a set threshold. This project can be used in applications such as breathalyzer systems for vehicles, safety applications, or monitoring alcohol consumption in various settings.
+                </p>
+                <p><strong>Technologies Used:</strong> Arduino, MQ-3 Sensor, LEDs, Buzzer</p>
+                <a href="https://i.ibb.co/xpPHLZw/20250407-121017-PMBy-GPSMap-Camera.webp" target="_blank">View Image</a>
+            </div>
+            <a href="your-more-projects-link" class="clickable-section">
+                See More Projects
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:aryanpardeshi9492@gmail.com">aryanpardeshi9492@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aryan-pardeshi-7090ab362" target="_blank">linkedin.com/in/aryan-pardeshi-7090ab362</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/your_instagram_username" target="_blank">instagram.com/your_instagram_username</a></p>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aryan </p>
+    </footer>
+</body>
+</html>
